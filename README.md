@@ -30,7 +30,7 @@ Missing value is availability of incomplete observations in the dataset. This is
 like, incomplete submission, wrong input, manual error etc.These Missing values affect the accuracy of
 model. So, it becomes important to check missing values in our given data.
 
-Missing Value Analysis in Given Data:
+### Missing Value Analysis in Given Data:
 
 In the given dataset it is found that there are lot of values which are missing. It is found in the following
 types:
@@ -44,7 +44,7 @@ data is also removed to improve the performance.
 
 ![image](https://user-images.githubusercontent.com/67412893/114296152-2f707280-9ac7-11eb-94e9-14ca9b9a7bb3.png)
 
-Impute the missing value:
+### Impute the missing value:
 
 After the identification of the missing values the next step is to impute the missing values. And this
 imputation is normally done by following methods.
@@ -60,7 +60,7 @@ value from the above methods for the example variable we have taken, now we chos
 gives most close value.
 In this project, I am droping all missing values missing Values. 
 
-Outlier Analysis:
+### Outlier Analysis:
 
 Outlier is an abnormal observation that stands or deviates away from other observations. These happens
 because of manual error, poor quality of data and it is correct but exceptional data. But, It can cause an
@@ -70,20 +70,20 @@ Outliers in this project.
 In this dataset, I have found some irregular data, those are considered as outliers. These are explained
 below.
 
-i) Fare_Amount :
+1) Fare_Amount :
 I have always seen fare of a cab ride as positive, I have never seen any cab driver, giving me money to take
 a ride in his cab. But in this dataset, there are many instances where fare amount is negative. Keeping a Threshold I'll remove them:
 
 df['fare_amount'] = df['fare_amount'][(df['fare_amount'] > 0) & (df['fare_amount'] <= 250)]
 
-ii) Passenger_count:
+2) Passenger_count:
 I have always found a cab with 4 seats to maximum of 6 seats. But in this dataset I have found passenger
 count more than this, and in some cases a large number of values. This seems irregular data, or a manual
 error. Thus, these are outliers and needs to be removed.
 
 df['passenger_count'] = df['passenger_count'][(df['passenger_count'] > 0) & (df['passenger_count'] <= 6)]
 
-ii) Location points:
+3) Location points:
 When I checked the data it is found that most of the longitude points are within the 70 degree and most
 of the latitude points are within the 40 degree. This symbolizes all the data belongs to a specific location
 and a specific range. But I also found some data which consists location points too far from the average
@@ -139,6 +139,8 @@ In this project we got our target variable as “fare_amount”. The model has t
 Thus, it is identified that this is a Regression problem statement. And to develop a regression model, the
 various models that can be used are Linear Regression, Decision trees, Random Forest, XG Boost. 
 
+### Decision Tree:
+
 Decision Tree is a supervised learning predictive model that uses a set of binary rules to calculate the
 target value/dependent variable.
 
@@ -148,4 +150,31 @@ Terminal Nodes : that predict the outcome, these are also called leaf nodes
 Branches : arrows connecting nodes, showing the flow from root to other leaves.
 
 Python:
+![image](https://user-images.githubusercontent.com/67412893/114296439-fe913d00-9ac8-11eb-8a3e-d38378dc00fc.png)
+
+### Random Forest:
+
+The next model to be followed in this project is Random forest. It is a process where the machine follows
+an ensemble learning method for classification and regression that operates by developing a number of
+decision trees at training time and giving output as the class that is the mode of the classes of all the
+individual decision trees. 
+
+Python:
+
+
+### Linear Regression:
+
+The next method in the process is Linear regression. It is used to predict the value of variable Y based on
+one or more input predictor variables X. The goal of this method is to establish a linear relationship
+between the predictor variables and the response variable. Such that, we can use this formula to estimate
+the value of the response Y, when only the predictors (X- Values) are known. 
+
+Python:
+![image](https://user-images.githubusercontent.com/67412893/114296529-79f2ee80-9ac9-11eb-8c48-4ceb4468b1ba.png)
+
+### XG Boost:
+
+XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. It implements machine learning algorithms under the
+Gradient Boosting framework. XGBoost provides a parallel tree boosting (also known as GBDT, GBM) that solve many data science problems in a fast and accurate way. The same code
+runs on major distributed environment (Hadoop, SGE, MPI) and can solve problems beyond billions of examples.
 
