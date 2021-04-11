@@ -74,12 +74,16 @@ below.
 I have always seen fare of a cab ride as positive, I have never seen any cab driver, giving me money to take
 a ride in his cab. But in this dataset, there are many instances where fare amount is negative. Keeping a Threshold I'll remove them:
 
+Python:
+
 df['fare_amount'] = df['fare_amount'][(df['fare_amount'] > 0) & (df['fare_amount'] <= 250)]
 
 2) Passenger_count:
 I have always found a cab with 4 seats to maximum of 6 seats. But in this dataset I have found passenger
 count more than this, and in some cases a large number of values. This seems irregular data, or a manual
 error. Thus, these are outliers and needs to be removed.
+
+Python:
 
 df['passenger_count'] = df['passenger_count'][(df['passenger_count'] > 0) & (df['passenger_count'] <= 6)]
 
@@ -89,6 +93,8 @@ of the latitude points are within the 40 degree. This symbolizes all the data be
 and a specific range. But I also found some data which consists location points too far from the average
 location point’s range of 70 Degree Longitude and 40 Degree latitude. It seems these far point locations
 are irregular data. And I consider this as outlier.
+
+Python:
 
 df['pickup_longitude']= df['pickup_longitude'].replace({0:np.nan})
 df['pickup_latitude']= df['pickup_latitude'].replace({0:np.nan})
