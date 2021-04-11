@@ -166,6 +166,8 @@ decision trees at training time and giving output as the class that is the mode 
 individual decision trees. 
 
 Python:
+![image](https://user-images.githubusercontent.com/67412893/114296880-326d6200-9acb-11eb-8ef1-6a641f7602b2.png)
+
 
 
 ### Linear Regression:
