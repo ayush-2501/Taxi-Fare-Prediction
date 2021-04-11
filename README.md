@@ -106,6 +106,8 @@ df['pickup_longitude'] = df['pickup_longitude'][(df['pickup_longitude'] <= -73.6
 df['dropoff_latitude'] = df['dropoff_latitude'][(df['dropoff_latitude'] >= 40.45) & (df['dropoff_latitude'] <= 40.92)]
 df['dropoff_longitude'] = df['dropoff_longitude'][(df['dropoff_longitude'] <= -73.65) & (df['dropoff_longitude'] >= -74.28)]
 
+## Feature Extraction
+
 ## Feature Selection
 
 Sometimes it happens that, all the variables in our data may not be accurate enough to predict the target
@@ -132,7 +134,6 @@ def sphere_dist(pick_lat, pick_lon, drop_lat, drop_lon):
                                                               drop_lat, drop_lon])
     dlat = drop_lat - pick_lat
     dlon = drop_lon - pick_lon
-   
     a = np.sin(dlat/2.0)**2 + np.cos(pick_lat) * np.cos(drop_lat) * np.sin(dlon/2.0)**2
     return 2 * R_earth * np.arcsin(np.sqrt(a))
    
