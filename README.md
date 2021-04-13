@@ -159,6 +159,10 @@ Branches : arrows connecting nodes, showing the flow from root to other leaves.
 Python:
 ![image](https://user-images.githubusercontent.com/67412893/114296439-fe913d00-9ac8-11eb-8a3e-d38378dc00fc.png)
 
+Regression Graph:
+![image](https://user-images.githubusercontent.com/67412893/114566538-04854a80-9c90-11eb-8bd8-e18e0214f6dd.png)
+
+
 ### Random Forest:
 
 The next model to be followed in this project is Random forest. It is a process where the machine follows
@@ -169,6 +173,8 @@ individual decision trees.
 Python:
 ![image](https://user-images.githubusercontent.com/67412893/114296880-326d6200-9acb-11eb-8ef1-6a641f7602b2.png)
 
+Regression Graph:
+![image](https://user-images.githubusercontent.com/67412893/114566621-1666ed80-9c90-11eb-85f7-2840831bf097.png)
 
 
 ### Linear Regression:
@@ -180,6 +186,10 @@ the value of the response Y, when only the predictors (X- Values) are known.
 
 Python:
 ![image](https://user-images.githubusercontent.com/67412893/114296529-79f2ee80-9ac9-11eb-8c48-4ceb4468b1ba.png)
+
+Regression Graph:
+![image](https://user-images.githubusercontent.com/67412893/114566439-e4ee2200-9c8f-11eb-8015-fadd350358d1.png)
+
 
 ### XG Boost:
 
