@@ -101,10 +101,10 @@ df['pickup_latitude']= df['pickup_latitude'].replace({0:np.nan})
 df['dropoff_longitude']= df['dropoff_longitude'].replace({0:np.nan})
 df['dropoff_latitude']= df['dropoff_latitude'].replace({0:np.nan})
 
-df['pickup_latitude'] = df['pickup_latitude'][(df['pickup_latitude'] >= 40.45) & (df['pickup_latitude'] <= 40.92)]
-df['pickup_longitude'] = df['pickup_longitude'][(df['pickup_longitude'] <= -73.65) & (df['pickup_longitude'] >= -74.28)]
-df['dropoff_latitude'] = df['dropoff_latitude'][(df['dropoff_latitude'] >= 40.45) & (df['dropoff_latitude'] <= 40.92)]
-df['dropoff_longitude'] = df['dropoff_longitude'][(df['dropoff_longitude'] <= -73.65) & (df['dropoff_longitude'] >= -74.28)]
+df['pickup_latitude'] = df['pickup_latitude'][(df['pickup_latitude'] >= 40) & (df['pickup_latitude'] <= 42)]
+df['pickup_longitude'] = df['pickup_longitude'][(df['pickup_longitude'] <= -72) & (df['pickup_longitude'] >= -75)]
+df['dropoff_latitude'] = df['dropoff_latitude'][(df['dropoff_latitude'] >= 40) & (df['dropoff_latitude'] <= 42)]
+df['dropoff_longitude'] = df['dropoff_longitude'][(df['dropoff_longitude'] <= -72) & (df['dropoff_longitude'] >= -75)]
 
 ## Feature Extraction
 
