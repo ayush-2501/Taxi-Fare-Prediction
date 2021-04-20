@@ -1,6 +1,8 @@
 # Taxi-Fare-Prediction
 Predicting the fare amount for a taxi ride in New York City
 
+Kaggle Test Dataset Score - 2.97
+
 ## Business Understanding
 
 It is important to understand the idea of business behind the data set. The given data set is asking us to
