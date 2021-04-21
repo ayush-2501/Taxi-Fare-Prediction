@@ -48,7 +48,7 @@ data is also removed to improve the performance.
 
 ### Impute the missing value:
 
-After the identification of the missing values the next step is to impute the missing values. And this
+After the Identification of the missing values the next step is to impute the missing values. And this
 imputation is normally done by following methods.
 
 1. Central Tendencies: by the help of Mean, Median or Mode
